@@ -1,0 +1,36 @@
+{
+  "name": "design-tapestry-team-site",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "deploy": "vercel --prod --yes",
+    "deploy:preview": "vercel --yes"
+  },
+  "dependencies": {
+    "framer-motion": "^12.40.0",
+    "material-symbols": "^0.44.12",
+    "matter-js": "^0.20.0",
+    "next": "15.5.19",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "shaders": "^2.5.135"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/matter-js": "^0.20.2",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.19",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vercel": "^54.18.2"
+  }
+}
