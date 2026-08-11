@@ -28,12 +28,12 @@ export type HeroV5CursorConfig = {
   drift: HeroV5CursorDrift;
 };
 
-export const HERO_V5_WORDS = ["Craft", "Design", "Build", "Strategize"] as const;
-
 export const heroV5Copy = {
-  suffix: "Experiences",
-  line2: "That Shape Retail",
-  subhead: "Uniting brand, product, and customer insight across Coach & Kate Spade.",
+  line1: "Building What’s Next",
+  line2: "for Coach & Kate\u00A0Spade",
+  subheadLine1: "We’re Tapestry’s in-house strategy and experience team",
+  subheadLine2:
+    "Bringing together brand, product, customer insight, and design to turn ambitious ideas into world-class retail\u00A0experiences.",
 } as const;
 
 export const heroV5Motion = {

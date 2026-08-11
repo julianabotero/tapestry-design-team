@@ -58,7 +58,7 @@ export const howWeDoItSteps: HowWeDoItStep[] = [
     title: "Align",
     description:
       "We get everyone on the same page. Through collaborative reviews with stakeholders, engineering, product, and design peers, we catch issues early and build momentum toward launch.",
-    shapeSrc: "/how-we-do-it/shapes/align.svg",
+    shapeSrc: "/how-we-do-it/shapes/align.png",
     shape: { top: 37.5, left: 24.5, width: 27, height: 17 },
     titlePos: { top: 41.96, left: 29.84 },
     body: { top: 46.14, left: 30.05, width: 25.62 },
@@ -78,7 +78,7 @@ export const howWeDoItSteps: HowWeDoItStep[] = [
     title: "Iterate",
     description:
       "We improve what we learn. Feedback becomes fuel. We refine interactions, fix friction points, and strengthen the experience until it's ready.",
-    shapeSrc: "/how-we-do-it/shapes/iterate.svg",
+    shapeSrc: "/how-we-do-it/shapes/iterate.png",
     shape: { top: 64.23, left: 49.75, width: 18.8, height: 13.5 },
     titlePos: { top: 63.76, left: 42.11 },
     body: { top: 67.94, left: 42.33, width: 25.62 },

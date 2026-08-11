@@ -19,8 +19,6 @@ export const site = {
         "We look for ways to support each other. We take ownership and choose trust over ego. We create space to have fun and find joy in creating together.",
     },
   ],
-  teamIntro:
-    "We're built on diverse backgrounds and experiences. That variety shapes how we approach problems, collaborate, and design solutions. Different perspectives make us stronger, and honestly, way more interesting.",
   team: [
     {
       name: "Sean Kelly",
@@ -122,7 +120,7 @@ export const site = {
   ],
   nav: [
     { href: "#resources", label: "Resources" },
-    { href: "#contact", label: "Contact" },
+    { href: "mailto:skelly1@tapestry.com", label: "Contact" },
   ],
 } as const;
 

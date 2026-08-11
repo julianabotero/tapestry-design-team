@@ -248,8 +248,8 @@ export class InteractiveDotsScene {
             },
           }
         : {
-            fillStyle: "#8a8a8a",
-            strokeStyle: "#6e6e6e",
+            fillStyle: "#8da7ba",
+            strokeStyle: "#758fa3",
             lineWidth: 1,
           },
     });

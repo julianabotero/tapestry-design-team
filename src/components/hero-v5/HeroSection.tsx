@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import {
-  HERO_V5_WORDS,
   heroV5Copy,
   heroV5Cursors,
   heroV5CssVars,
@@ -11,7 +10,6 @@ import {
 } from "@/content/heroV5";
 import { HeroTeamCursor } from "./HeroTeamCursor";
 import { HeroViewport } from "./HeroViewport";
-import { HeroWordSlot } from "./HeroWordSlot";
 import { PillNav } from "./PillNav";
 
 function useHeroV5Phase() {
@@ -35,47 +33,12 @@ function useHeroV5Phase() {
   return phase;
 }
 
-function useHeroV5WordIndex(settled: boolean) {
-  const [wordIndex, setWordIndex] = useState(0);
-
-  useEffect(() => {
-    if (!settled) {
-      setWordIndex(0);
-      return;
-    }
-
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
-    let index = 0;
-    let intervalId = 0;
-
-    const advance = () => {
-      index = (index + 1) % HERO_V5_WORDS.length;
-      setWordIndex(index);
-    };
-
-    const timeoutId = window.setTimeout(() => {
-      advance();
-      intervalId = window.setInterval(advance, heroV5Motion.wordRotateIntervalMs);
-    }, heroV5Motion.wordRotateInitialDelayMs);
-
-    return () => {
-      window.clearTimeout(timeoutId);
-      window.clearInterval(intervalId);
-    };
-  }, [settled]);
-
-  return wordIndex;
-}
-
 function HeroCanvas() {
   return <div className="hero-v5__canvas" aria-hidden />;
 }
 
 export function HeroSectionV5() {
   const phase = useHeroV5Phase();
-  const settled = phase === "settled";
-  const wordIndex = useHeroV5WordIndex(settled);
   const cursorsActive = phase === "cursors" || phase === "settled";
 
   return (
@@ -86,15 +49,15 @@ export function HeroSectionV5() {
         <div className="hero-v5__frame">
           <div className="hero-v5__copy">
             <h1 className="hero-v5__headline">
-              <span className="hero-v5__headline-line">
-                <span className="hero-v5__headline-phrase">
-                  <HeroWordSlot words={HERO_V5_WORDS} wordIndex={wordIndex} />
-                  <span className="hero-v5__headline-suffix">{heroV5Copy.suffix}</span>
-                </span>
+              <span className="hero-v5__headline-line">{heroV5Copy.line1}</span>
+              <span className="hero-v5__headline-line hero-v5__headline-line--nowrap">
+                {heroV5Copy.line2}
               </span>
-              <span className="hero-v5__headline-line">{heroV5Copy.line2}</span>
             </h1>
-            <p className="hero-v5__subhead">{heroV5Copy.subhead}</p>
+            <p className="hero-v5__subhead">
+              <span className="hero-v5__subhead-line">{heroV5Copy.subheadLine1}</span>
+              <span className="hero-v5__subhead-line">{heroV5Copy.subheadLine2}</span>
+            </p>
           </div>
 
           <div className="hero-v5__cursors">
