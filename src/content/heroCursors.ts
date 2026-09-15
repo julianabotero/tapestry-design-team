@@ -8,12 +8,6 @@ export type HeroCursorConfig = {
 /** Figma 732:5 — team member cursor positions and colors */
 export const heroCursors: HeroCursorConfig[] = [
   {
-    name: "Kat Guzman",
-    color: "#a342ff",
-    cursorIcon: "/hero/cursors/cursor-1.svg",
-    position: { xPercent: 25, yPercent: 22 },
-  },
-  {
     name: "Mitra Raveendran",
     color: "#262673",
     cursorIcon: "/hero/cursors/cursor-4.svg",
