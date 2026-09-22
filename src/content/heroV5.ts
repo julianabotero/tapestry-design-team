@@ -74,7 +74,7 @@ export function heroV5CursorPathAnchor(cursorId: string): HeroV5CursorDriftPoint
   const anchors: Record<string, HeroV5CursorDriftPoint> = {
     juliana: { x: 5, y: 68 },
     johnny: { x: 50, y: 12 },
-    cong: { x: 16, y: 80 },
+    cong: { x: 16, y: 18 },
     mitra: { x: 88, y: 36 },
     sean: { x: 66, y: 80 },
     wendy: { x: 86, y: 60 },
@@ -95,7 +95,7 @@ const BASE_CURSORS: HeroV5CursorConfig[] = [
     x: 50,
     y: 12,
     enter: { x: 24, y: -220 },
-    order: 2,
+    order: 1,
     drift: {
       path: [
         pathPoint(46, 10),
@@ -119,7 +119,7 @@ const BASE_CURSORS: HeroV5CursorConfig[] = [
     x: 73.2,
     y: 29.8,
     enter: { x: 260, y: -35 },
-    order: 4,
+    order: 3,
     drift: {
       path: [
         pathPoint(86, 28),
@@ -143,7 +143,7 @@ const BASE_CURSORS: HeroV5CursorConfig[] = [
     x: 77.8,
     y: 64.9,
     enter: { x: 235, y: -150 },
-    order: 6,
+    order: 5,
     drift: {
       path: [
         pathPoint(84, 54),
@@ -167,7 +167,7 @@ const BASE_CURSORS: HeroV5CursorConfig[] = [
     x: 62.9,
     y: 82.9,
     enter: { x: -20, y: 235 },
-    order: 5,
+    order: 4,
     drift: {
       path: [
         pathPoint(62, 76),
@@ -188,35 +188,35 @@ const BASE_CURSORS: HeroV5CursorConfig[] = [
     shadow: "rgba(255,205,41,0.25)",
     text: "black",
     side: "right",
-    x: 26.3,
-    y: 81.5,
-    enter: { x: 210, y: 200 },
-    order: 3,
+    x: 15.8,
+    y: 21.6,
+    enter: { x: -250, y: 12 },
+    order: 2,
     drift: {
       path: [
-        pathPoint(14, 72),
-        pathPoint(16, 66),
-        pathPoint(22, 70),
-        pathPoint(24, 82),
-        pathPoint(16, 86),
-        pathPoint(10, 78),
-        pathPoint(14, 72),
+        pathPoint(12, 14),
+        pathPoint(7, 13),
+        pathPoint(8, 20),
+        pathPoint(14, 25),
+        pathPoint(21, 21),
+        pathPoint(18, 16),
+        pathPoint(12, 14),
       ],
-      durationSec: 30,
+      durationSec: 32,
     },
   },
   {
     id: "gulsheen",
     name: "Gulsheen Bhatia",
-    fill: "#0D99FF",
-    border: "#0A7ACC",
-    shadow: "rgba(13,153,255,0.25)",
+    fill: "#14AE5C",
+    border: "#108B4A",
+    shadow: "rgba(20,174,92,0.25)",
     text: "white",
     side: "right",
     x: 40.7,
     y: 67,
     enter: { x: -235, y: 95 },
-    order: 7,
+    order: 6,
     drift: {
       path: [
         pathPoint(30, 74),
@@ -232,15 +232,15 @@ const BASE_CURSORS: HeroV5CursorConfig[] = [
   {
     id: "juliana",
     name: "Juliana Botero",
-    fill: "#9747FF",
-    border: "#7939CC",
-    shadow: "rgba(151,71,255,0.25)",
+    fill: "#2E689E",
+    border: "#24537E",
+    shadow: "rgba(46,104,158,0.25)",
     text: "white",
     side: "right",
     x: 5,
     y: 68,
     enter: { x: 8, y: 215 },
-    order: 1,
+    order: 0,
     drift: {
       path: [
         pathPoint(4, 64),

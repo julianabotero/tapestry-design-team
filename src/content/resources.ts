@@ -1,8 +1,3 @@
-export const resourcesIntro = {
-  description:
-    "Our growing library of resources, best practices, and branding assets. We're adding more content soon!",
-} as const;
-
 export type ResourceBrandId = "coach" | "kate-spade";
 
 export type BrandAssetItem = {

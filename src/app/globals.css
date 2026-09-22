@@ -2244,15 +2244,6 @@ body {
     object-position: left bottom;
   }
 
-  .resources__description {
-    margin: clamp(1.5rem, 3vw, 2rem) 0 0;
-    max-width: 26rem;
-    font-size: clamp(1rem, 1.35vw, 1.125rem);
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--foreground);
-  }
-
   .resources__brands-wrap {
     width: 100%;
   }

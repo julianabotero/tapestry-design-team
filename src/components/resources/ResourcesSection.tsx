@@ -1,5 +1,4 @@
 import { Reveal } from "@/components/Reveal";
-import { resourcesIntro } from "@/content/resources";
 import { ResourcesBrandPanel } from "./ResourcesBrandPanel";
 import { ResourcesYellowIcon } from "./ResourcesYellowIcon";
 
@@ -21,7 +20,6 @@ export function ResourcesSection() {
                 <span>& Share</span>
               </span>
             </h2>
-            <p className="resources__description">{resourcesIntro.description}</p>
           </Reveal>
         </header>
 
