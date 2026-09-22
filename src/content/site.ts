@@ -105,18 +105,6 @@ export const site = {
       posterLabel: "Bauhaus bicycle",
       email: "gulsheen.bhatia@tapestry.com",
     },
-    {
-      name: "Kat Guzman",
-      title: "UX Designer",
-      location: "New York, NY",
-      bio: TEAM_BIO_PLACEHOLDER,
-      poster: "/team-posters/kat-guzman.jpg",
-      photo: "/team-posters/kat-guzman-photo.png",
-      hoverBio:
-        "When I'm not at work, I'm at a concert, thrifting vinyl, and chasing the next creative rabbit hole.",
-      posterLabel: "Music poster",
-      email: "kat.guzman@tapestry.com",
-    },
   ],
   nav: [
     { href: "#resources", label: "Resources" },

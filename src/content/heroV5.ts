@@ -72,7 +72,6 @@ function pathPoint(x: number, y: number): HeroV5CursorDriftPoint {
 
 export function heroV5CursorPathAnchor(cursorId: string): HeroV5CursorDriftPoint {
   const anchors: Record<string, HeroV5CursorDriftPoint> = {
-    kat: { x: 16, y: 18 },
     juliana: { x: 5, y: 68 },
     johnny: { x: 50, y: 12 },
     cong: { x: 16, y: 80 },
@@ -85,31 +84,6 @@ export function heroV5CursorPathAnchor(cursorId: string): HeroV5CursorDriftPoint
 }
 
 const BASE_CURSORS: HeroV5CursorConfig[] = [
-  {
-    id: "kat",
-    name: "Kat Guzman",
-    fill: "#14AE5C",
-    border: "#108B4A",
-    shadow: "rgba(20,174,92,0.25)",
-    text: "white",
-    side: "right",
-    x: 15.8,
-    y: 21.6,
-    enter: { x: -250, y: 12 },
-    order: 0,
-    drift: {
-      path: [
-        pathPoint(12, 14),
-        pathPoint(7, 13),
-        pathPoint(8, 20),
-        pathPoint(14, 25),
-        pathPoint(21, 21),
-        pathPoint(18, 16),
-        pathPoint(12, 14),
-      ],
-      durationSec: 32,
-    },
-  },
   {
     id: "johnny",
     name: "Johnny Martinez",

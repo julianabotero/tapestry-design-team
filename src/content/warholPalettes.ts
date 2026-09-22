@@ -66,14 +66,6 @@ export const warholPalettes: Record<string, WarholPalette> = {
     leafA: c.align,
     leafB: c.deliver,
   },
-  "Kat Guzman": {
-    background: c.align,
-    skin: c.test,
-    shadow: c.frame,
-    highlight: c.deliver,
-    leafA: c.explore,
-    leafB: c.iterate,
-  },
 };
 
 export const defaultWarholPalette: WarholPalette = {
